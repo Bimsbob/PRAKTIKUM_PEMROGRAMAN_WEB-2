@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Form Pendaftaran Lomba</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f8f9fa;
+      padding: 20px;
+    }
+    form {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form Pendaftaran Lomba</h2>
+
+  <form action="proses_lomba.php" method="post">
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+
+    <label for="no_hp">No. HP</label>
+    <input type="text" id="no_hp" name="no_hp" placeholder="Masukkan nomor HP" required>
+
+    <label for="lomba">Jenis Lomba</label>
+    <select id="lomba" name="lomba" required>
+      <option value="">-- Pilih Lomba --</option>
+      <option value="Desain Poster">Desain Poster</option>
+      <option value="Coding Challenge">Coding Challenge</option>
+      <option value="Fotografi">Fotografi</option>
+      <option value="Menulis Esai">Menulis Esai</option>
+      <option value="Video Kreatif">Video Kreatif</option>
+    </select>
+
+    <label for="instansi">Asal Instansi / Sekolah</label>
+    <input type="text" id="instansi" name="instansi" placeholder="Masukkan nama instansi" required>
+
+    <button type="submit">Daftar Sekarang</button>
+  </form>
+</body>
+</html>
